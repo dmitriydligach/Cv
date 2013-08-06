@@ -1,0 +1,224 @@
+ % LaTeX Curriculum Vitae
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+\def\name{Dmitriy Dligach, Ph.D.}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, natural language processing, machine learning},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+\href{http://www.colorado.edu}{Boston Children's Hospital} \\
+Harvard Medical School \\
+300 Longwood Ave \\
+Boston, MA 02115
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\begin{tabular}{ll}
+Phone: & (617) 919-3596 \\
+Fax: &  (617) 730-0921 \\
+Email: & \href{mailto:dmitriy dot dligach at childrens.harvard.edu}{\tt dmitriy.dligach@childrens.harvard.edu} \\
+Web: & \href{https://sites.google.com/site/dmitriydligach/}{\tt https://sites.google.com/site/dmitriydligach/} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Research Interests}
+
+Natural language processing, machine learning, data mining, medical informatics.
+
+\section*{Education}
+
+\begin{itemize}
+\item Ph.D. Computer Science, University of Colorado, Boulder, 2010.
+\item M.S. Computer Science, State University of New York, Buffalo, 2004.
+\item B.S. Computer Science, Loyola University, Chicago, 1999.
+\end{itemize}
+
+\section*{Professional Experience}
+
+\begin{itemize}
+\item Research Fellow, Harvard Medical School, 2011 - present
+\item Research Fellow, Boston Children's Hospital, 2011 - present
+\item Postdoctoral Research Associate, University of Colorado, Boulder, 2010 -- 2011
+\item Research Assistant, University of Colorado, Boulder, 2005 -- 2010.
+\item Research Scientist, Pronto Inc., Boulder, 2005.
+\item Teaching Assistant, State University of New York, Buffalo, 2003 -- 2005.
+\item Senior Software Engineer, Motorola, Inc., Arlington Heights, IL, 2000 -- 2003.
+\item Development Analyst, Commonwealth Edison, Chicago, IL, 1999 -- 2000.
+\item Network Administrator, Graver, Bokhof, Goodwin \& Sullivan, Chicago, IL, 1997 -- 1998.
+\item Internship, Trans Union Corporation, Chicago, IL, 1997.
+\end{itemize}
+
+\section*{Publications}
+
+\subsection*{Conference Proceedings}
+
+\begin{itemize}
+\item Dmitriy Dligach and Martha Palmer. Good Seed Makes a Good Crop: Accelerating Active Learning Using Language Modeling. In \emph {ACL '11: Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies}. June 19 - 24, 2011, Portland, OR. 
+\item Susan Windisch Brown, Dmitriy Dligach, and Martha Palmer. VerbNet Class Assignment as a WSD Task. In \emph {IWSC 2011: Proceedings of the 9th International Conference on Computational Semantics}. January 12 - 14, 2011, Oxford, UK. 
+\item Dmitriy Dligach and Martha Palmer. Improving Verb Sense Disambiguation with Automatically Retrieved Semantic Knowledge. In \emph {ICSC '08: Proceedings of the Second IEEE International Conference on Semantic Computing}. August 4 - 7, 2008, Santa Clara, CA.
+\item Dmitriy Dligach and Martha Palmer. Novel Semantic Features for Verb Sense Disambiguation. In \emph {ACL '08: Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies}. June 15 - 20, 2008, Columbus, OH. 
+\item Jinying Chen, Dmitriy Dligach, and Martha Palmer. Towards Large-scale High-Performance English Verb Sense Disambiguation by Using Linguistically Motivated Features. In \emph {ICSC '07: Proceedings of the First IEEE International Conference on Semantic Computing}. Sep 17 - 19, 2007, Irvine, CA.
+\item Cecily Jill Duffield, Jena D. Hwang, Susan Windisch Brown, Dmitriy Dligach, Sarah E. Vieweg, Jenny Davis, and Martha Palmer. Criteria for the Manual Clustering of Verb Senses. In \emph {CogSci '07: Proceedings of the 29th Annual Conference of the Cognitive Science Society}. August 1-4, 2007, Nashville, TN.
+\end{itemize}
+
+\subsection*{Workshop Proceedings}
+
+\begin{itemize}
+
+\item Dmitriy Dligach, Timothy A. Miller, Guergana K. Savova. Active Learning for Phenotyping Tasks. In \emph{Proceedings of the 2013 NLP for Medicine and Biology workshop held in conjunction with RANLP-2013}. September 2013. Hissar, Bulgaria.
+\item Timothy A. Miller, Steven Bethard, Dmitriy Dligach, Sameer Pradhan, Chen Lin, Guergana K. Savova. Discovering Narrative Containers in Clinicagl Text. In \emph{Proceedings of the 2013 Workshop on Biomedical Natural Language Processing (BioNLP 2013) held in conjunction with NAACL-2013}. August 2013, Sophia, Bulgaria.
+\item Chen Lin, Timothy Miller, Dmitriy Dligach, Robert M. Plenge, Elizabeth W. Karlson, Guergana Savova. Maximal Information Coefficient for Feature Selection for Clinical Document Classification. In \emph{International Conference on Machine Learning (ICML 2012) Workshop on Machine Learning for Clinical Data Analysis}. June 2012, Edinburgh, Scotland. 
+\item Chen Lin, Timothy Miller, Dmitry Dligach, Robert Plenge, Elizabeth Karlson, Guergana Savova. Feature Engineering and Selection for Rheumatoid Arthritis Disease Activity Classification Using Electronic Medical Records. In \emph{International Conference on Machine Learning (ICML 2012) Workshop on Machine Learning for Clinical Data Analysis}. June 2012, Edinburgh, Scotland. 
+\item Timothy A. Miller, Dmitriy Dligach, and Guergana K. Savova. Active Learning for Coreference Resolution. In \emph{Proceedings of the 2012 Workshop on Biomedical Natural Language Processing (BioNLP 2012) held in conjunction with NAACL-2012}. June 2012, Montreal, Canada.
+\item Stephen T. Wu, Vinod C. Kaggal, Guergana K. Savova, Hongfang Liu, Dmitriy Dligach, Jiaping Zheng, Wendy W. Chapman, Christopher G. Chute. Generality and Reuse in a Common Type System for Clinical Natural Language Processing. In \emph{Managing Interoperability and compleXity in Health Systems (MIXHS-2011)}. October 2011, Glasgow, Scotland, U.K.
+\item Dmitriy Dligach and Martha Palmer. Reducing the Need for Double Annotation. In \emph{Proceedings of the Fifth Linguistic Annotation Workshop (LAW V) held in conjunction with ACL-2011}. June, 2011, Portland, OR.
+\item Dmitriy Dligach, Rodney D. Nielsen, and Martha Palmer. To Annotate More or to Annotate More Accurately. In \emph{Proceedings of the Fourth Linguistic Annotation Workshop (LAW IV) held in conjunction with ACL-2010}. July, 2010, Uppsala, Sweden.
+\item Suresh Manandhar, Ioannis P. Klapaftis, Dmitriy Dligach, and Sameer S. Pradhan. SemEval-2010 Task 14: Word Sense Induction \& Disambiguation. In \emph{Proceedings of the Fifth International Workshop on Semantic Evaluations (SemEval-2010) held in conjunction with ACL-2010}. July, 2010, Uppsala, Sweden.
+\item Dmitriy Dligach and Martha Palmer. Using Language Modeling to Select Useful Annotation Data. In \emph {Proceedings of the Student Research Workshop and Doctoral Consortium Held in Conjunction with NAACL-HLT 2009}. May 31 - June 5, 2009. Boulder, Colorado.
+\item Sameer Pradhan, Edward Loper, Dmitriy Dligach, and Martha Palmer. SemEval-2007 Task-17: English Lexical Sample, SRL and All Words. In \emph {Proceedings of the Fourth International Workshop on Semantic Evaluations (SemEval-2007) held in conjunction with ACL-2007}. June, 2007, Prague, the Czech Republic.
+\item Cecily Jill Duffield, Jena D. Hwang, Susan Windisch Brown, Dmitriy Dligach, Sarah E. Vieweg, Jenny Davis, and Martha Palmer. 2007. Criteria for the Manual Grouping of Verb Senses. In \emph {Proceedings of the Linguistic Annotation Workshop held in conjunction with ACL 2007}. June, 2007, Prague, the Czech Republic.
+\end{itemize}
+
+\subsection*{Journal Articles}
+
+\begin{itemize}
+\item Dmitriy Dligach, Steven Bethard, Lee Becker, Timothy A. Miller, Guergana K. Savova. Discovering Body Site and Severity Modifiers in Clinical Texts. \emph{Journal of American Medical Informatics}. Under review.
+\item Chen Lin, Elizabeth W. Karlson, Helena Canhao, Timothy A. Miller, Dmitriy Dligach, Pei Jun Chen, Raul Natanael Guzman Perez, Tianxi Cai, Michael E. Weinblatt, Nancy A. Shadick, Robert M. Plenge, Guergana K. Savova. Automatic Prediction of Rheumatoid Arthritis Disease Activity from the Electronic Medical Records. \emph{PLoS One}. In print.
+\item Daniel Albright, Arrick Lanfranchi, Anwen Fredriksen, William F. Styler, Colin Warner, Jena D. Hwang, Jinho D, Choi, Dmitriy Dligach, Rodney D. Nielsen, James Martin, Wayne Ward, Martha Palmer, Guergana K. Savova. Towards comprehensive syntactic and semantic annotations of the clinical narrative. \emph{Journal of American Medical Informatics}. In print.
+\item Stephen T. Wu, Vinod C. Kaggal, Dmitriy Dligach, James J. Masanz, Pei Chen, Lee Becker, Wendy W. Chapman, Guergana K. Savova, Hongfang Liu and Christopher G. Chute. A common type system for clinical Natural Language Processing. \emph{Journal of Biomedical Semantics}. January 2013, 4:1.
+\item Dmitriy Dligach and Martha Palmer. Word Sense Disambiguation with Automatically Retrieved Semantic Knowledge. \emph {International Journal of Semantic Computing (IJSC)}. 2:3, pp. 365-380, 2008. 
+\end{itemize}
+
+\subsection*{Book Chapters}
+\begin{itemize}
+\item Susan Windisch Brown, Dmitriy Dligach, and Martha Palmer. VerbNet Class Assignment as a WSD Task. \emph{Computing Meaning Vol. 4}. In print.
+\end{itemize}
+
+\subsection*{Conference Abstracts}
+\begin{itemize}
+\item Dmitriy Dligach, Steven Bethard, Lee Becker, Timothy A. Miller, Guergana K. Savova. Discovering Body Site and Severity Modifiers in Clinical Texts. In \emph{American Medical Informatics Association Symposium}. Washington DC, November, 2013.
+\end{itemize}
+
+\subsection*{Poster Presentations}
+
+\begin{itemize}
+\item Susan Windisch Brown, Cecily Jill Duffield, Jena D. Hwang, Dmitrity Dligach, Sarah E. Vieweg, Jenny Davis, Martha Palmer. The role of functional nouns in manual grouping of verb senses. In \emph {Poster Session of Concept Types and Frames in Language, Cognition, and Science}. August 20-22, 2007, Dusseldorf, Germany.
+\end{itemize}
+
+\subsection*{Ph.D. Thesis}
+\begin{itemize}
+\item Dmitriy Dligach. High-performance Word Sense Disambiguation with Less Manual Effort. Ph.D. thesis, University of Colorado at Boulder, August 2010.
+\end{itemize}
+
+\subsection*{Minor Contributions}
+\begin{itemize}
+\item William J. Rapaport. Philosophy of Computer Science: An Introductory Course. In \emph {Teaching Philosophy 28(4): 319-341}. 2005.
+\end{itemize}
+
+\subsection*{Invited Talks}
+\begin{itemize}
+\item Active Learning for Phenotyping Tasks. i2b2 3rd Annual Academic User Group Conference and NLP Workshop. Boston, MA. June 2013.
+\item Discovering Body Site and Severity Modifiers in Rheumatoid Arthritis Data. i2b2 2rd Annual Academic User Group Conference and NLP Workshop. Boston, MA. June 2012.
+\item Discovering Severity and Body Site Modifiers: A Relation Extraction Task. Strategic Health IT Advanced Research Project Annual Meeting. Rochester, MN, June, 2012.
+\end{itemize}
+
+\subsection*{Courses Taught}
+
+\begin{itemize}
+\item CSCI 3202: Introduction to Artificial Intelligence. University of Colorado, Boulder, Invited lecture, Fall 2008.
+\item LING 7800: Advanced Computational Linguistics: Lexical Semantics. University of Colorado, Boulder, Invited lecture, Spring 2007.
+\item LING 5200: Computational Corpus Linguistics. University of Colorado, Boulder, Invited lecture, Spring 2006
+\item CSE/PHI 510: Philosophy of Computer Science. State University of New York, Buffalo, Teaching Assistant, Fall 2004.
+\item CSE 116 : Introduction To Computer Science for Majors II. State University of New York, Buffalo, Teaching Assistant, Fall 2003, Spring 2004. 
+\end{itemize}
+
+\subsection*{Courses Prepared to Teach}
+
+\begin{itemize}
+\item Natural Language Processing / Computational Linguistics
+\item Machine Learning
+\item Artificial Intelligence
+\item Data Mining
+\end{itemize}
+
+\subsection*{Honors}
+\begin{itemize}
+\item Presidential Fellowship, State University of New York, Buffalo. 
+\item Fr. Gerst Memorial Award ("presented to a single graduating senior who has displayed outstanding academic achievement in mathematics or computer science"), Loyola University, Chicago, 1999.
+\item Graduated Magna Cum Laude, Loyola University, Chicago, 1999.
+\item Loyola University scholarship, Loyola University, Chicago, 1996.
+\end{itemize}
+
+\subsection*{Service}
+
+\begin{itemize}
+\item RANLP NLP for Medicine and Biology Workshop. Paper Reviewer. September 2013.
+\item American Medical Informatics Association Symposium. Paper Reviewer. May 2013.
+\item International Conference on Computational Semantics (IWCS). Program Committe. March 2013.
+\item i2b2/VA/Cincinnati 2011 Shared Task and Workshop. Paper Reviewer. September 2011.
+\item Computational Linguistics. Paper Reviewer. May 2011.
+\item SemEval 2010. Paper Reviewer. April 2010.
+\item SemEval 2010. Program Committee. April 2010.
+\item SemEval 2010 Tasks 14: Word Sense Induction \& Disambiguation Task. Organizing Committee. April 2010.
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+\begin{footnotesize}
+Last updated: \today \\
+\end{footnotesize}
+\end{center}
+
+\end{document}
